@@ -25,7 +25,7 @@ const About = () => {
             </p>
             
             <p>
-              Tenho experiência prática com Java (Spring Boot) e Python (FastAPI), desenvolvendo APIs limpas e modulares em ambientes de microsserviços e serverless. Adoto princípios como SOLID, Arquitetura Limpa e DDD para manter o código sustentável, compreensível e pronto para evoluir.
+              Me chamo Gabriel Venancio. Tenho experiência prática com Java (Spring Boot) e Python (FastAPI), desenvolvendo APIs limpas e modulares em ambientes de microsserviços e serverless. Adoto princípios como SOLID, Arquitetura Limpa e DDD para manter o código sustentável, compreensível e pronto para evoluir.
             </p>
             
             <p>
@@ -49,8 +49,8 @@ const About = () => {
         <div className="relative group">
           <div className="relative z-10 bg-portfolio-green rounded overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
-              alt="Your Name"
+              src="/me.jpg"
+              alt="Gabriel Venancio"
               className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-300"
             />
           </div>

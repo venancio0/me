@@ -10,30 +10,30 @@ const Sidebar = () => {
   const navItems = [
     { 
       href: '#about', 
-      label: language === 'en' ? '01. About' : '01. Sobre', 
+      label: language === 'pt' ? '01. About' : '01. Sobre', 
       icon: User 
     },
     { 
       href: '#experience', 
-      label: language === 'en' ? '02. Experience' : '02. Experiência', 
+      label: language === 'pt' ? '02. Experience' : '02. Experiência', 
       icon: Briefcase 
     },
     { 
       href: '#work', 
-      label: language === 'en' ? '03. Work' : '03. Trabalhos', 
+      label: language === 'pt' ? '03. Work' : '03. Trabalhos', 
       icon: FolderOpen 
     },
     { 
       href: '#contact', 
-      label: language === 'en' ? '04. Contact' : '04. Contato', 
-      icon: MessageCircle 
+      label: language === 'pt' ? '04. Contact' : '04. Contato', 
+      icon: MessageCircle
     },
   ];
 
   const socialLinks = [
-    { href: 'https://github.com', icon: Github, label: 'GitHub' },
-    { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
-    { href: 'mailto:your.email@example.com', icon: Mail, label: 'Email' },
+    { href: 'https://github.com/venancio0', icon: Github, label: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/gabriel-venancio-b91484197/', icon: Linkedin, label: 'LinkedIn' },
+    { href: 'mailto:gabvcampaner@gmail.com', icon: Mail, label: 'Email' },
   ];
 
   useEffect(() => {
@@ -56,7 +56,7 @@ const Sidebar = () => {
   }, []);
 
   const toggleLanguage = () => {
-    setLanguage(prev => prev === 'en' ? 'pt' : 'en');
+    setLanguage(prev => prev === 'pt' ? 'pt' : 'en');
   };
 
   return (
@@ -99,7 +99,7 @@ const Sidebar = () => {
         {/* Logo */}
         <div className="mb-12 relative z-10">
           <div className="w-12 h-12 border-2 border-yellow-400 rounded flex items-center justify-center">
-            <span className="text-yellow-400 font-bold text-xl">Y</span>
+            <span className="text-yellow-400 font-bold text-xl">GV</span>
           </div>
         </div>
 
@@ -164,10 +164,10 @@ const Sidebar = () => {
         {/* Email - Mobile only */}
         <div className="mt-8 lg:hidden relative z-10">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:gabvcampaner@gmail.com"
             className="text-yellow-400 text-sm tracking-widest"
           >
-            your.email@example.com
+            gabvcampaner@gmail.com
           </a>
         </div>
       </aside>
@@ -176,11 +176,11 @@ const Sidebar = () => {
       <div className="hidden lg:block fixed bottom-0 right-10 z-10">
         <div className="flex flex-col items-center">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:gabvcampaner@gmail.com"
             className="text-zinc-500 hover:text-yellow-400 transition-colors duration-300 text-sm tracking-widest"
             style={{ writingMode: 'vertical-rl' }}
           >
-            your.email@example.com
+            gabvcampaner@gmail.com
           </a>
           <div className="w-px h-24 bg-zinc-700 mt-6"></div>
         </div>

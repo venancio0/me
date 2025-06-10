@@ -3,37 +3,36 @@ import React from 'react';
 
 const About = () => {
   const skills = [
-    'JavaScript (ES6+)',
-    'TypeScript',
-    'React',
+    'Java',
+    'Springboot',
+    'AWS (EKS, ECS, RDS, Lambda, etc)',
     'Node.js',
     'Python',
-    'PostgreSQL'
+    'FastAPI',
+    'PostgreSQL',
+    'Docker'
   ];
 
   return (
     <section id="about">
-      <h2 className="section-heading">About Me</h2>
+      <h2 className="section-heading">Sobre</h2>
       
       <div className="grid md:grid-cols-3 gap-12 items-start">
         <div className="md:col-span-2">
           <div className="space-y-4">
             <p>
-              Hello! My name is Your Name and I enjoy creating things that live on the internet. 
-              My interest in web development started back in 2012 when I decided to try editing 
-              custom Tumblr themes — turns out hacking together a custom reblog button taught me 
-              a lot about HTML & CSS!
+              Olá! Seja bem-vindo(a) ao meu portifolio!
             </p>
             
             <p>
-              Fast-forward to today, and I've had the privilege of working at an advertising agency, 
-              a start-up, a huge corporation, and a student-led design studio. My main focus these 
-              days is building accessible, inclusive products and digital experiences for a variety 
-              of clients.
+              Tenho experiência prática com Java (Spring Boot) e Python (FastAPI), desenvolvendo APIs limpas e modulares em ambientes de microsserviços e serverless. Adoto princípios como SOLID, Arquitetura Limpa e DDD para manter o código sustentável, compreensível e pronto para evoluir.
             </p>
             
             <p>
-              Here are a few technologies I've been working with recently:
+              O que me motiva é construir software que faz sentido — que resolve problemas reais e melhora tanto a vida do usuário quanto de quem mantém o sistema. Gosto de trabalhar em times ágeis, com foco em qualidade de código, colaboração e melhoria contínua.
+            </p>
+            <p>
+              Aqui estão algumas das tecnologias que venho utilizando no meu dia a dia:
             </p>
           </div>
           

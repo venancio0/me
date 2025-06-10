@@ -19,7 +19,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="text-center py-12 border-t border-zinc-800">
         <p className="text-zinc-500 text-sm">
-          Built with ❤️ using React & Tailwind CSS
+          Made by Venancio0
         </p>
       </footer>
     </Layout>

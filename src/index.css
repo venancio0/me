@@ -1,0 +1,119 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 8%;
+    --foreground: 60 100% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 60 100% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 60 100% 95%;
+
+    --primary: 48 100% 50%;
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 60 100% 95%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 48 30% 70%;
+
+    --accent: 48 100% 50%;
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 48 100% 50%;
+
+    --radius: 12px;
+
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 48 30% 70%;
+    --sidebar-primary: 48 100% 50%;
+    --sidebar-primary-foreground: 0 0% 8%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 60 100% 95%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 48 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-black text-white font-inter;
+    line-height: 1.6;
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section {
+    @apply max-w-6xl mx-auto px-8 py-16;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white font-semibold;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+    font-weight: 700;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+    font-weight: 600;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+    font-weight: 600;
+  }
+
+  p {
+    @apply text-zinc-300 text-lg leading-relaxed;
+  }
+
+  .section-heading {
+    @apply flex items-center text-3xl font-bold text-white mb-12;
+  }
+
+  .section-heading::before {
+    content: '';
+    @apply w-12 h-1 bg-yellow-400 mr-6 rounded-full;
+  }
+
+  .apple-blur {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .apple-button {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full transition-all duration-300 hover:bg-yellow-300 hover:scale-105 active:scale-95;
+  }
+
+  .apple-card {
+    @apply bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 transition-all duration-300 hover:bg-zinc-900/70 hover:border-zinc-700;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent;
+  }
+}

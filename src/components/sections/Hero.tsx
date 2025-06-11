@@ -32,7 +32,7 @@ const Hero = () => {
           </a>
           
           <a
-            href="#"
+            href="/cv.pdf"
             className="inline-flex items-center px-6 py-3 border border-zinc-700 text-zinc-300 hover:text-white hover:border-zinc-600 rounded-full transition-all duration-300"
           >
             <Download size={16} className="mr-2" />
